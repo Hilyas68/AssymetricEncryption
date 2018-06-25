@@ -2,8 +2,6 @@
 {
     class TeamB
     {
-        static void Main(string[] args)
-        {
-        }
+       
     }
 }
