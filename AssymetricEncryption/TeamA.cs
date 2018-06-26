@@ -31,8 +31,9 @@ namespace AssymetricEncryption
 
                 rsaSender.FromXmlString(publicKey);
                 encryptedData = rsaSender.Encrypt(data, true);
+                var dataString = Convert.ToBase64String(encryptedData);
 
-                File.WriteAllText("encryptedData.xml", Encoding.UTF8.GetString(encryptedData));
+                File.WriteAllText("encryptedData.xml", dataString);
             }
             
 
